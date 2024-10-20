@@ -7,6 +7,7 @@ import {
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Home from "./pages/Home";
+import FileForm from "./pages/FileForm";
 import {
   ProtectedRoute,
   PublicRouteProtect,
@@ -34,6 +35,14 @@ const router = createBrowserRouter([
     element: (
       <ProtectedRoute>
         <Home />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/file",
+    element: (
+      <ProtectedRoute>
+        <FileForm />
       </ProtectedRoute>
     ),
   },
