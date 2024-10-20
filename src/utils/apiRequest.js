@@ -1,5 +1,5 @@
-export const localURL = `https://moonshot-2-server.onrender.com`;
-// export const localURL = `http://localhost:3005`;
+// export const localURL = `https://moonshot-2-server.onrender.com`;
+export const localURL = `http://localhost:3005`;
 
 export const authRequest = async (endPoint, body) => {
   const res = await fetch(`${localURL}/${endPoint}`, {

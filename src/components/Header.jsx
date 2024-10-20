@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import { localURL } from "../utils/apiRequest";
 
@@ -25,7 +25,8 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-slate-200 h-[10vh] flex items-center justify-end py-4 px-8">
+    <header className="bg-slate-200 h-[10vh] flex items-center justify-between py-4 px-8">
+      <Link to="/file" className="font-semibold bg-yellow-100 text-yellow-700 px-8 py-2 rounded-md">Upload File</Link>
       <button
         onClick={handleGetCookie}
         className="bg-red-200 text-red-500 font-semibold px-8 py-2 rounded-lg"
